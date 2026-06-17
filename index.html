@@ -6,7 +6,7 @@
 <title>Srinivas & Sangha Mitra – Wedding Invitation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Sans+Telugu:wght@700&display=swap" rel="stylesheet"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 html,body{width:100%;overflow-x:hidden;}
@@ -113,7 +113,8 @@ nav.topnav{
   display:flex;align-items:center;justify-content:space-between;
   padding:13px 26px;border-bottom:1px solid rgba(127,170,108,.25);
 }
-.nav-logo{font-family:'Great Vibes',cursive;font-size:25px;color:#2d5a40;}
+.nav-logo{font-family:'Great Vibes',cursive;font-size:19px;color:#2d5a40;white-space:nowrap;}
+@media(max-width:480px){.nav-logo{font-size:15px;}}
 .nav-links{display:flex;gap:22px;list-style:none;}
 .nav-links a{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#7faa6c;text-decoration:none;font-weight:700;}
 
@@ -131,25 +132,27 @@ nav.topnav{
 @keyframes twinkle{0%,100%{opacity:.15;transform:scale(.7);}50%{opacity:.85;transform:scale(1.15);}}
 
 .together-line{font-size:11px;letter-spacing:5px;text-transform:uppercase;color:#b97b8c;font-weight:700;margin-bottom:20px;}
-.groom-block{}
-.groom-name{font-family:'Great Vibes',cursive;font-size:clamp(58px,13vw,104px);color:#2d5a40;line-height:1.05;
+.groom-block{padding-top:14px;}
+.groom-name{font-family:'Great Vibes',cursive;font-size:clamp(58px,13vw,104px);line-height:1.35;padding:0 6px;
   background:linear-gradient(90deg,#2d5a40 30%,#7faa6c 50%,#2d5a40 70%);
   background-size:200% auto;
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
   animation:shimmer 5s linear infinite;
+  display:inline-block;
 }
-.groom-parents{font-size:clamp(13px,3vw,15px);color:#9c5f6e;font-weight:600;font-style:italic;letter-spacing:.4px;line-height:1.85;margin-top:6px;}
-.amp-row{display:flex;align-items:center;gap:16px;margin:20px auto;}
+.groom-parents{font-size:clamp(13px,3vw,15px);color:#9c5f6e;font-weight:600;font-style:italic;letter-spacing:.4px;line-height:1.85;margin-top:10px;}
+.amp-row{display:flex;align-items:center;gap:16px;margin:22px auto;}
 .amp-line{width:clamp(44px,9vw,86px);height:2px;background:linear-gradient(90deg,transparent,#c79a4b,transparent);}
-.amp-char{font-family:'Great Vibes',cursive;font-size:clamp(48px,11vw,84px);color:#c79a4b;line-height:1;}
-.bride-block{}
-.bride-name{font-family:'Great Vibes',cursive;font-size:clamp(58px,13vw,104px);color:#2d5a40;line-height:1.05;
+.amp-char{font-family:'Great Vibes',cursive;font-size:clamp(48px,11vw,84px);color:#c79a4b;line-height:1.3;display:inline-block;}
+.bride-block{padding-top:6px;}
+.bride-name{font-family:'Great Vibes',cursive;font-size:clamp(58px,13vw,104px);line-height:1.35;padding:0 6px;
   background:linear-gradient(90deg,#2d5a40 30%,#b97b8c 50%,#2d5a40 70%);
   background-size:200% auto;
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
   animation:shimmer 5s linear infinite;
+  display:inline-block;
 }
-.bride-parents{font-size:clamp(13px,3vw,15px);color:#9c5f6e;font-weight:600;font-style:italic;letter-spacing:.4px;line-height:1.85;margin-top:6px;}
+.bride-parents{font-size:clamp(13px,3vw,15px);color:#9c5f6e;font-weight:600;font-style:italic;letter-spacing:.4px;line-height:1.85;margin-top:10px;}
 
 .bottom-deco{display:flex;align-items:center;gap:14px;margin-top:36px;}
 .deco-line{width:clamp(52px,11vw,100px);height:1px;background:#7faa6c;}
@@ -163,9 +166,9 @@ nav.topnav{
 .rev-title{font-family:'Playfair Display',serif;font-weight:700;font-size:28px;color:#fff;margin-bottom:6px;}
 .rev-sub{font-size:14px;color:#cfe0c3;font-style:italic;font-weight:600;margin-bottom:30px;}
 
-.scratch-wrap{position:relative;width:min(300px,86vw);height:92px;margin:0 auto 8px;border-radius:14px;overflow:hidden;cursor:crosshair;touch-action:none;box-shadow:0 8px 30px rgba(0,0,0,.25);}
-.scratch-back{position:absolute;inset:0;background:linear-gradient(135deg,#c79a4b,#f0dca0);border-radius:14px;display:flex;align-items:center;justify-content:center;}
-.scratch-back-text{font-family:'Playfair Display',serif;font-weight:700;font-size:23px;color:#2d5a40;letter-spacing:2px;opacity:0;transition:opacity .7s;}
+.scratch-wrap{position:relative;width:min(300px,86vw);height:92px;margin:0 auto 8px;border-radius:14px;overflow:hidden;cursor:crosshair;touch-action:none;box-shadow:0 8px 30px rgba(0,0,0,.3), 0 0 0 2px #f0dca0;}
+.scratch-back{position:absolute;inset:0;background:linear-gradient(135deg,#8a5a1e,#c79a4b,#f0dca0,#c79a4b,#8a5a1e);display:flex;align-items:center;justify-content:center;}
+.scratch-back-text{font-family:'Playfair Display',serif;font-weight:700;font-size:23px;color:#2d3a1a;letter-spacing:2px;opacity:0;transition:opacity .7s;text-shadow:0 1px 0 rgba(255,255,255,.4);}
 .scratch-back-text.on{opacity:1;}
 #sc{position:absolute;inset:0;border-radius:14px;}
 .scratch-hint{font-size:12px;color:#f0dca0;letter-spacing:2px;font-style:italic;font-weight:600;margin-top:8px;}
@@ -188,8 +191,7 @@ nav.topnav{
 .sched-title{font-family:'Playfair Display',serif;font-weight:700;font-size:30px;color:#2d5a40;margin-bottom:8px;text-align:center;}
 .sched-title-rule{width:70px;height:3px;background:linear-gradient(90deg,#c79a4b,#b97b8c);margin:0 auto 36px;border-radius:2px;}
 
-.sched-cards{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:780px;margin:0 auto;}
-@media(max-width:620px){.sched-cards{grid-template-columns:1fr;}}
+.sched-cards{display:flex;flex-direction:column;gap:30px;max-width:600px;margin:0 auto;}
 
 .sched-card{
   background:#fff;border-radius:18px;overflow:hidden;position:relative;
@@ -197,21 +199,14 @@ nav.topnav{
   transition:transform .3s, box-shadow .3s;
 }
 .sched-card:hover{transform:translateY(-6px);box-shadow:0 18px 44px rgba(45,90,64,.2);}
-.sched-card-img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;}
-.sched-card-body{padding:22px 22px 26px;text-align:center;}
-.sc-type{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#b97b8c;font-weight:700;margin-bottom:8px;}
-.sc-name{font-family:'Playfair Display',serif;font-weight:700;font-size:21px;color:#2d5a40;margin-bottom:14px;}
-.sc-rule{width:38px;height:2px;background:#c79a4b;margin:0 auto 14px;border-radius:2px;}
-.sc-row{font-size:14.5px;color:#5a7a52;font-weight:600;line-height:1.8;margin-bottom:4px;}
-.sc-row strong{color:#2d5a40;font-weight:700;}
-.sc-note{font-size:13.5px;font-style:italic;color:#c79a4b;font-weight:700;margin-top:10px;}
+.sched-card-img-full{width:100%;display:block;}
 
 /* ══════════════ FAMILIES / AWAITING ══════════════ */
 .awaiting-section{
   background:linear-gradient(160deg,#dcebd0 0%,#f4dde0 100%);
   padding:76px 24px 70px;text-align:center;position:relative;overflow:hidden;
 }
-.await-bg-mono{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Great Vibes',cursive;font-size:250px;color:#2d5a40;opacity:.05;pointer-events:none;white-space:nowrap;line-height:1;}
+.await-bg-mono{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Noto Sans Telugu','Cormorant Garamond',serif;font-weight:700;font-size:240px;color:#2d5a40;opacity:.06;pointer-events:none;white-space:nowrap;line-height:1;}
 
 .await-eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#b97b8c;font-weight:700;margin-bottom:10px;}
 .await-title{font-family:'Playfair Display',serif;font-weight:700;font-size:30px;color:#2d5a40;margin-bottom:6px;}
@@ -233,8 +228,8 @@ nav.topnav{
 .venue-card{background:#fff;border-radius:18px;overflow:hidden;max-width:580px;margin:0 auto;box-shadow:0 12px 36px rgba(45,90,64,.14);}
 .venue-info{padding:28px 26px 0;}
 .venue-name{font-family:'Playfair Display',serif;font-weight:700;font-size:21px;color:#2d5a40;margin-bottom:6px;}
-.venue-addr{font-size:14.5px;color:#5a7a52;font-weight:600;font-style:italic;line-height:1.8;}
-.venue-phone{font-size:14.5px;color:#b97b8c;font-weight:700;margin-top:10px;}
+.venue-addr{font-family:'Playfair Display',serif;font-size:14px;color:#5a7a52;font-weight:500;font-style:italic;line-height:1.9;letter-spacing:.3px;}
+.venue-phone{font-family:'Playfair Display',serif;font-size:14.5px;color:#b97b8c;font-weight:700;margin-top:12px;}
 .venue-map iframe{width:100%;height:210px;border:none;display:block;margin-top:18px;}
 .venue-btn{display:block;text-align:center;padding:15px;background:linear-gradient(90deg,#2d5a40,#3d6e50);color:#f0dca0;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;text-decoration:none;}
 .venue-btn:hover{background:#234a32;}
@@ -249,6 +244,18 @@ nav.topnav{
 </style>
 </head>
 <body>
+
+<!-- Background music: add your own instrumental track here.
+     Place an mp3 file named "music.mp3" in the same folder as this HTML file. -->
+<audio id="bgMusic" loop preload="auto">
+  <source src="music.mp3" type="audio/mpeg"/>
+</audio>
+<button id="musicToggle" onclick="toggleMusic()" aria-label="Toggle music" style="position:fixed;bottom:18px;right:18px;z-index:280;width:46px;height:46px;border-radius:50%;border:none;background:linear-gradient(135deg,#2d5a40,#3d6e50);box-shadow:0 6px 18px rgba(0,0,0,.25);cursor:pointer;display:none;align-items:center;justify-content:center;">
+  <svg id="musicIcon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+    <path d="M3 7v6h3l5 4V3L6 7H3Z" fill="#f0dca0"/>
+    <path d="M14 7a4 4 0 0 1 0 6" stroke="#f0dca0" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+  </svg>
+</button>
 
 <div id="petals"></div>
 
@@ -291,7 +298,7 @@ nav.topnav{
 <div id="main-site">
 
   <nav class="topnav">
-    <div class="nav-logo">S &amp; S</div>
+    <div class="nav-logo">✿ Srinivas &amp; Sangha Mitra ✿</div>
     <ul class="nav-links">
       <li><a href="#names">Couple</a></li>
       <li><a href="#reveal">Date</a></li>
@@ -321,17 +328,32 @@ nav.topnav{
         <path d="M8 0 Q26 48 62 78 Q90 106 134 162 Q98 92 68 62 Q36 34 8 0Z" fill="#2d5a40"/>
       </svg>
       <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Great Vibes',cursive;font-size:280px;color:#2d5a40;opacity:.04;pointer-events:none;line-height:1;white-space:nowrap;">&amp;</div>
-      <svg style="position:absolute;top:66px;left:50%;transform:translateX(-50%);opacity:.18;" width="140" height="46" viewBox="0 0 140 46" fill="none">
-        <ellipse cx="70" cy="23" rx="65" ry="17" stroke="#c79a4b" stroke-width="1" fill="none" stroke-dasharray="5 3"/>
-        <circle cx="5" cy="23" r="3" fill="#b97b8c"/><circle cx="135" cy="23" r="3" fill="#b97b8c"/>
-        <circle cx="70" cy="6" r="2.5" fill="#7faa6c"/><circle cx="70" cy="40" r="2.5" fill="#7faa6c"/>
+      <!-- Telugu wedding motif: mango-leaf toranam strung across the top -->
+      <svg style="position:absolute;top:0px;left:50%;transform:translateX(-50%);opacity:.5;" width="280" height="70" viewBox="0 0 280 70" fill="none">
+        <path d="M4 6 Q140 26 276 6" stroke="#8a6a3a" stroke-width="2" fill="none"/>
+        <g fill="#5d8a4a">
+          <path d="M20 8 Q14 22 22 34 Q30 22 24 8Z"/>
+          <path d="M50 9 Q44 24 52 37 Q60 24 54 9Z"/>
+          <path d="M80 10 Q74 26 82 40 Q90 26 84 10Z"/>
+          <path d="M110 10.5 Q104 27 112 41 Q120 27 114 10.5Z"/>
+          <path d="M140 11 Q134 28 142 42 Q150 28 144 11Z"/>
+          <path d="M170 10.5 Q164 27 172 41 Q180 27 174 10.5Z"/>
+          <path d="M200 10 Q194 26 202 40 Q210 26 204 10Z"/>
+          <path d="M230 9 Q224 24 232 37 Q240 24 234 9Z"/>
+          <path d="M260 8 Q254 22 262 34 Q270 22 264 8Z"/>
+        </g>
+        <g fill="#3f6e34" opacity=".7">
+          <path d="M20 8 Q24 22 22 34 Q18 22 20 8Z"/>
+          <path d="M50 9 Q54 24 52 37 Q48 24 50 9Z"/>
+          <path d="M80 10 Q84 26 82 40 Q78 26 80 10Z"/>
+          <path d="M110 10.5 Q114 27 112 41 Q108 27 110 10.5Z"/>
+          <path d="M140 11 Q144 28 142 42 Q138 28 140 11Z"/>
+          <path d="M170 10.5 Q174 27 172 41 Q168 27 170 10.5Z"/>
+          <path d="M200 10 Q204 26 202 40 Q198 26 200 10Z"/>
+          <path d="M230 9 Q234 24 232 37 Q228 24 230 9Z"/>
+          <path d="M260 8 Q264 22 262 34 Q258 22 260 8Z"/>
+        </g>
       </svg>
-      <!-- sparkles -->
-      <div class="sparkle" style="width:5px;height:5px;left:15%;top:20%;animation-delay:.2s;"></div>
-      <div class="sparkle" style="width:4px;height:4px;left:80%;top:30%;animation-delay:.8s;"></div>
-      <div class="sparkle" style="width:6px;height:6px;left:25%;top:70%;animation-delay:1.4s;"></div>
-      <div class="sparkle" style="width:4px;height:4px;left:70%;top:75%;animation-delay:.5s;"></div>
-      <div class="sparkle" style="width:5px;height:5px;left:90%;top:60%;animation-delay:1.1s;"></div>
     </div>
 
     <p class="together-line reveal">Together with their families</p>
@@ -410,27 +432,11 @@ nav.topnav{
       <div class="sched-cards">
 
         <div class="sched-card reveal-l">
-          <img class="sched-card-img" src="reception.jpeg" alt="Reception invitation"/>
-          <div class="sched-card-body">
-            <p class="sc-type">Reception</p>
-            <p class="sc-name">Wedding Reception</p>
-            <div class="sc-rule"></div>
-            <p class="sc-row"><strong>Date</strong><br/>August 27, 2026</p>
-            <p class="sc-row" style="margin-top:10px"><strong>Time</strong><br/>6:30 PM – 10:30 PM</p>
-            <p class="sc-note">Followed by Dinner</p>
-          </div>
+          <img class="sched-card-img-full" src="reception.jpeg" alt="Reception invitation"/>
         </div>
 
         <div class="sched-card reveal-r">
-          <img class="sched-card-img" src="marriage.jpeg" alt="Marriage invitation"/>
-          <div class="sched-card-body">
-            <p class="sc-type">Marriage</p>
-            <p class="sc-name">Wedding Ceremony</p>
-            <div class="sc-rule"></div>
-            <p class="sc-row"><strong>Date</strong><br/>August 27, 2026</p>
-            <p class="sc-row" style="margin-top:10px"><strong>Time</strong><br/>10:30 PM – 11:50 PM</p>
-            <p class="sc-note">S. Conventions Function Hall</p>
-          </div>
+          <img class="sched-card-img-full" src="marriage.jpeg" alt="Marriage invitation"/>
         </div>
 
       </div>
@@ -439,14 +445,31 @@ nav.topnav{
 
   <!-- ── AWAITING / FAMILIES ── -->
   <div class="awaiting-section">
-    <div class="await-bg-mono">S &amp; S</div>
+    <div class="await-bg-mono">శ్రీ</div>
 
-    <svg style="margin-bottom:28px;opacity:.65;" width="160" height="60" viewBox="0 0 160 60" fill="none" class="reveal-scale">
-      <ellipse cx="80" cy="30" rx="74" ry="22" stroke="#c79a4b" stroke-width="1" fill="none" stroke-dasharray="6 4"/>
-      <circle cx="6" cy="30" r="4" fill="#b97b8c"/><circle cx="154" cy="30" r="4" fill="#b97b8c"/>
-      <circle cx="80" cy="8" r="3" fill="#7faa6c"/><circle cx="80" cy="52" r="3" fill="#7faa6c"/>
-      <circle cx="36" cy="10" r="2" fill="#c79a4b" opacity=".7"/><circle cx="124" cy="10" r="2" fill="#c79a4b" opacity=".7"/>
-      <circle cx="36" cy="50" r="2" fill="#c79a4b" opacity=".7"/><circle cx="124" cy="50" r="2" fill="#c79a4b" opacity=".7"/>
+    <!-- Telugu wedding motif: Kalasham (sacred pot with coconut and mango leaves) -->
+    <svg style="margin-bottom:24px;" width="86" height="100" viewBox="0 0 86 100" fill="none" class="reveal-scale">
+      <!-- coconut -->
+      <circle cx="43" cy="20" r="15" fill="#8a6a3a"/>
+      <circle cx="43" cy="20" r="15" fill="none" stroke="#5d4a28" stroke-width="1"/>
+      <path d="M36 14 Q43 10 50 14" stroke="#5d4a28" stroke-width="1" fill="none"/>
+      <!-- mango leaves around neck -->
+      <g fill="#5d8a4a">
+        <path d="M16 38 Q8 30 12 20 Q20 28 16 38Z"/>
+        <path d="M70 38 Q78 30 74 20 Q66 28 70 38Z"/>
+        <path d="M28 32 Q22 22 28 12 Q34 22 28 32Z"/>
+        <path d="M58 32 Q64 22 58 12 Q52 22 58 32Z"/>
+      </g>
+      <!-- pot neck -->
+      <path d="M30 38 L30 48 Q30 52 35 52 L51 52 Q56 52 56 48 L56 38 Z" fill="#c79a4b"/>
+      <!-- pot body -->
+      <path d="M22 52 Q20 78 30 92 Q43 100 56 92 Q66 78 64 52 Z" fill="#d4a853"/>
+      <path d="M22 52 Q20 78 30 92 Q43 100 56 92 Q66 78 64 52 Z" fill="none" stroke="#9c7530" stroke-width="1"/>
+      <!-- decorative bands -->
+      <path d="M24 64 Q43 70 62 64" stroke="#9c7530" stroke-width="1.2" fill="none" opacity=".6"/>
+      <path d="M25 78 Q43 84 61 78" stroke="#9c7530" stroke-width="1.2" fill="none" opacity=".6"/>
+      <!-- small kumkum dot -->
+      <circle cx="43" cy="68" r="3" fill="#b97b8c"/>
     </svg>
 
     <p class="await-eyebrow reveal">With Love</p>
@@ -527,6 +550,14 @@ function spawnPetals(){
 function openEnvelope(){
   spawnPetals();
   document.getElementById('env-screen').classList.add('hide');
+  // start background music (only if a music.mp3 file has been added)
+  const music=document.getElementById('bgMusic');
+  music.volume=0.45;
+  music.play().then(()=>{
+    document.getElementById('musicToggle').style.display='flex';
+  }).catch(()=>{
+    // no music file present or autoplay blocked — fail silently, site still works
+  });
   setTimeout(()=>{
     document.getElementById('env-screen').style.display='none';
     document.getElementById('main-site').classList.add('visible');
@@ -536,6 +567,20 @@ function openEnvelope(){
   },950);
 }
 
+let musicPlaying=true;
+function toggleMusic(){
+  const music=document.getElementById('bgMusic');
+  const icon=document.getElementById('musicIcon');
+  if(musicPlaying){
+    music.pause();
+    icon.innerHTML='<path d="M3 7v6h3l5 4V3L6 7H3Z" fill="#f0dca0"/><line x1="13" y1="6" x2="18" y2="14" stroke="#f0dca0" stroke-width="1.6" stroke-linecap="round"/><line x1="18" y1="6" x2="13" y2="14" stroke="#f0dca0" stroke-width="1.6" stroke-linecap="round"/>';
+  }else{
+    music.play().catch(()=>{});
+    icon.innerHTML='<path d="M3 7v6h3l5 4V3L6 7H3Z" fill="#f0dca0"/><path d="M14 7a4 4 0 0 1 0 6" stroke="#f0dca0" stroke-width="1.6" stroke-linecap="round" fill="none"/>';
+  }
+  musicPlaying=!musicPlaying;
+}
+
 let scratchDone=false;
 function initScratch(){
   const wrap=document.getElementById('scratchWrap');
@@ -543,22 +588,68 @@ function initScratch(){
   const ctx=canvas.getContext('2d');
   canvas.width=wrap.offsetWidth;
   canvas.height=wrap.offsetHeight;
-  ctx.fillStyle='#2d5a40';
+
+  // Gold scratch-off surface
+  const grad=ctx.createLinearGradient(0,0,canvas.width,canvas.height);
+  grad.addColorStop(0,'#e0ad55');
+  grad.addColorStop(.5,'#d4a040');
+  grad.addColorStop(1,'#c4922f');
+  ctx.fillStyle=grad;
   ctx.beginPath();ctx.roundRect(0,0,canvas.width,canvas.height,14);ctx.fill();
-  ctx.strokeStyle='rgba(255,255,255,.06)';
-  for(let i=0;i<canvas.width;i+=18){ctx.beginPath();ctx.moveTo(i,0);ctx.lineTo(i,canvas.height);ctx.stroke();}
-  ctx.font='600 14px Cormorant Garamond,serif';
-  ctx.fillStyle='rgba(240,220,160,.85)';
+
+  // subtle foil texture lines
+  ctx.strokeStyle='rgba(255,255,255,.18)';
+  for(let i=0;i<canvas.width;i+=14){ctx.beginPath();ctx.moveTo(i,0);ctx.lineTo(i,canvas.height);ctx.stroke();}
+  ctx.strokeStyle='rgba(120,80,10,.12)';
+  for(let i=6;i<canvas.width;i+=14){ctx.beginPath();ctx.moveTo(i,0);ctx.lineTo(i,canvas.height);ctx.stroke();}
+
+  ctx.font='700 14px Cormorant Garamond,serif';
+  ctx.fillStyle='rgba(60,40,10,.55)';
   ctx.textAlign='center';
   ctx.fillText('✦  Scratch Here  ✦',canvas.width/2,canvas.height/2+5);
 
   let down=false,scratched=0;
   const total=canvas.width*canvas.height;
 
+  // ── cracker / spark particles ──
+  function fireSparks(x,y){
+    const rect=canvas.getBoundingClientRect();
+    const sparkColors=['#ffd84d','#ffb800','#ff8c00','#fff3c0','#ffe066'];
+    const count=4+Math.floor(Math.random()*3);
+    for(let i=0;i<count;i++){
+      const s=document.createElement('div');
+      const angle=Math.random()*Math.PI*2;
+      const dist=14+Math.random()*26;
+      const dx=Math.cos(angle)*dist;
+      const dy=Math.sin(angle)*dist;
+      const sz=2+Math.random()*3;
+      s.style.position='fixed';
+      s.style.left=(rect.left+x)+'px';
+      s.style.top=(rect.top+y)+'px';
+      s.style.width=sz+'px';
+      s.style.height=sz+'px';
+      s.style.borderRadius='50%';
+      s.style.background=sparkColors[Math.floor(Math.random()*sparkColors.length)];
+      s.style.boxShadow='0 0 6px 1px rgba(255,200,60,.8)';
+      s.style.pointerEvents='none';
+      s.style.zIndex='260';
+      s.style.transition='transform .55s cubic-bezier(.2,.8,.3,1), opacity .55s ease';
+      s.style.transform='translate(0,0) scale(1)';
+      s.style.opacity='1';
+      document.body.appendChild(s);
+      requestAnimationFrame(()=>{
+        s.style.transform=`translate(${dx}px, ${dy+18}px) scale(0.2)`;
+        s.style.opacity='0';
+      });
+      setTimeout(()=>s.remove(),600);
+    }
+  }
+
   function doScratch(x,y){
     ctx.globalCompositeOperation='destination-out';
     ctx.beginPath();ctx.arc(x,y,24,0,Math.PI*2);ctx.fill();
     scratched+=Math.PI*24*24;
+    fireSparks(x,y);
     if(!scratchDone&&scratched/total>.38){
       scratchDone=true;
       document.getElementById('scratchText').classList.add('on');
