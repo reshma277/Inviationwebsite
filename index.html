@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Srinivas & Sangha Mitra – Wedding Invitation</title>
@@ -22,10 +21,7 @@
 <meta name="twitter:image" content="https://inviationwebsite-2.vercel.app/preview.png">
 
 <meta name="description" content="With love, we invite you to celebrate our wedding together.">
-...rest of your head (fonts, styles)...
-</head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Srinivas & Sangha Mitra – Wedding Invitation</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Sans+Telugu:wght@700&display=swap" rel="stylesheet"/>
@@ -38,25 +34,12 @@ body{
   color:#3a4e36;
 }
 
-/* ══════════════ PALETTE ══════════════
-  cream      #f7f1e6
-  blush      #f4dde0
-  sage       #cfe0c3
-  sage-deep  #7faa6c
-  forest     #2d5a40
-  gold       #c79a4b
-  gold-light #f0dca0
-  mauve      #b97b8c
-  lilac      #cdb8e0
-*/
-
 @keyframes riseIn{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
 @keyframes bounce{0%,100%{transform:translateY(0);}50%{transform:translateY(6px);}}
 @keyframes floatY{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
 @keyframes shimmer{0%{background-position:-200% 0;}100%{background-position:200% 0;}}
 @keyframes spin360{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
 
-/* scroll reveal base */
 .reveal{opacity:0;transform:translateY(40px);transition:opacity .9s ease, transform .9s ease;}
 .reveal.in{opacity:1;transform:translateY(0);}
 .reveal-l{opacity:0;transform:translateX(-50px);transition:opacity .9s ease, transform .9s ease;}
@@ -66,7 +49,6 @@ body{
 .reveal-scale{opacity:0;transform:scale(.85);transition:opacity .9s ease, transform .9s ease;}
 .reveal-scale.in{opacity:1;transform:scale(1);}
 
-/* ══════════════ ENVELOPE SCREEN ══════════════ */
 #env-screen{
   position:fixed;inset:0;z-index:300;
   display:flex;flex-direction:column;align-items:center;justify-content:center;
@@ -120,12 +102,10 @@ body{
 .tap-open{font-size:11px;letter-spacing:3.5px;text-transform:uppercase;color:#b97b8c;font-weight:700;}
 .tap-arr{animation:bounce 1.6s ease-in-out infinite;}
 
-/* ══════════════ PETALS ══════════════ */
 #petals{position:fixed;inset:0;pointer-events:none;z-index:250;overflow:hidden;}
 .petal{position:absolute;top:-20px;border-radius:50% 0 50% 0;animation:fall linear forwards;}
 @keyframes fall{0%{opacity:.9;transform:translateY(0) rotate(0deg);}100%{opacity:0;transform:translateY(110vh) rotate(720deg);}}
 
-/* ══════════════ MAIN SITE ══════════════ */
 #main-site{opacity:0;transition:opacity .6s ease;pointer-events:none;}
 #main-site.visible{opacity:1;pointer-events:all;}
 
@@ -135,12 +115,11 @@ nav.topnav{
   display:flex;align-items:center;justify-content:space-between;
   padding:13px 26px;border-bottom:1px solid rgba(127,170,108,.25);
 }
-.nav-logo{font-family:'Great Vibes',cursive;font-size:19px;color:#2d5a40;white-space:nowrap;}
-@media(max-width:480px){.nav-logo{font-size:15px;}}
-.nav-links{display:flex;gap:22px;list-style:none;}
+.nav-logo{font-family:'Great Vibes',cursive;font-size:19px;color:#2d5a40;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:70vw;}
+@media(max-width:480px){.nav-logo{font-size:13px;}}
+.nav-links{display:flex;gap:22px;list-style:none;flex-shrink:0;}
 .nav-links a{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#7faa6c;text-decoration:none;font-weight:700;}
 
-/* ══════════════ PAGE 1 – NAMES ══════════════ */
 .page-names{
   min-height:100vh;
   display:flex;flex-direction:column;align-items:center;justify-content:center;
@@ -149,9 +128,6 @@ nav.topnav{
   background:linear-gradient(165deg,#f4dde0 0%,#f7f1e6 45%,#dcebd0 100%);
 }
 .bg-deco{position:absolute;inset:0;pointer-events:none;overflow:hidden;}
-
-.sparkle{position:absolute;border-radius:50%;background:#f0dca0;opacity:.6;animation:twinkle 2.4s ease-in-out infinite;}
-@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.7);}50%{opacity:.85;transform:scale(1.15);}}
 
 .together-line{font-size:11px;letter-spacing:5px;text-transform:uppercase;color:#b97b8c;font-weight:700;margin-bottom:20px;}
 .groom-block{padding-top:14px;}
@@ -182,7 +158,6 @@ nav.topnav{
 .scroll-cue{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:5px;}
 .scroll-txt{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#7faa6c;font-weight:700;}
 
-/* ══════════════ REVEAL SECTION ══════════════ */
 .reveal-section{padding:80px 24px 64px;background:linear-gradient(160deg,#2d5a40 0%,#234a32 100%);text-align:center;position:relative;overflow:hidden;}
 .rev-eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#f0dca0;font-weight:700;margin-bottom:10px;}
 .rev-title{font-family:'Playfair Display',serif;font-weight:700;font-size:28px;color:#fff;margin-bottom:6px;}
@@ -204,7 +179,6 @@ nav.topnav{
 .cd-num{font-family:'Playfair Display',serif;font-weight:700;font-size:36px;color:#2d5a40;background:linear-gradient(160deg,#f0dca0,#fff);border-radius:12px;width:70px;height:70px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.2);}
 .cd-lbl{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#cfe0c3;font-weight:700;margin-top:7px;}
 
-/* ══════════════ SCHEDULE SECTION ══════════════ */
 #sched-section{display:none;opacity:0;transition:opacity .8s ease;}
 #sched-section.show{display:block;opacity:1;}
 
@@ -223,7 +197,6 @@ nav.topnav{
 .sched-card:hover{transform:translateY(-6px);box-shadow:0 18px 44px rgba(45,90,64,.2);}
 .sched-card-img-full{width:100%;display:block;}
 
-/* ══════════════ FAMILIES / AWAITING ══════════════ */
 .awaiting-section{
   background:linear-gradient(160deg,#dcebd0 0%,#f4dde0 100%);
   padding:76px 24px 70px;text-align:center;position:relative;overflow:hidden;
@@ -242,7 +215,6 @@ nav.topnav{
 
 .couple-illustration{margin:40px auto 0;max-width:340px;}
 
-/* ══════════════ VENUE ══════════════ */
 .venue-section{padding:72px 24px;background:#f7f1e6;text-align:center;}
 .venue-eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#b97b8c;font-weight:700;margin-bottom:10px;}
 .venue-title{font-family:'Playfair Display',serif;font-weight:700;font-size:30px;color:#2d5a40;margin-bottom:8px;}
@@ -256,7 +228,6 @@ nav.topnav{
 .venue-btn{display:block;text-align:center;padding:15px;background:linear-gradient(90deg,#2d5a40,#3d6e50);color:#f0dca0;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;text-decoration:none;}
 .venue-btn:hover{background:#234a32;}
 
-/* ══════════════ FOOTER ══════════════ */
 .footer{background:linear-gradient(160deg,#2d5a40 0%,#1c3f29 100%);text-align:center;padding:60px 24px 28px;}
 .footer-mono{font-family:'Great Vibes',cursive;font-size:50px;color:#f0dca0;}
 .footer-date{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#cfe0c3;font-weight:700;margin-top:10px;}
@@ -281,9 +252,6 @@ nav.topnav{
 
 <div id="petals"></div>
 
-<!-- ═══════════════════════════════════
-     ENVELOPE LANDING
-═══════════════════════════════════ -->
 <div id="env-screen">
   <div class="env-scene" onclick="openEnvelope()" role="button" aria-label="Tap to open invitation">
     <div class="envelope">
@@ -314,13 +282,10 @@ nav.topnav{
   </div>
 </div>
 
-<!-- ═══════════════════════════════════
-     MAIN SITE
-═══════════════════════════════════ -->
 <div id="main-site">
 
   <nav class="topnav">
-    <div class="nav-logo">✿ We coardially invite you to beginning of our forever✿</div>
+    <div class="nav-logo">✿ We cordially invite you to the beginning of our forever ✿</div>
     <ul class="nav-links">
       <li><a href="#names">Couple</a></li>
       <li><a href="#reveal">Date</a></li>
@@ -328,7 +293,6 @@ nav.topnav{
     </ul>
   </nav>
 
-  <!-- ── PAGE 1: NAMES ── -->
   <section class="page-names" id="names">
     <div class="bg-deco" aria-hidden="true">
       <svg style="position:absolute;left:-8px;top:55px;opacity:.13;" width="190" height="330" viewBox="0 0 190 330" fill="none">
@@ -350,7 +314,6 @@ nav.topnav{
         <path d="M8 0 Q26 48 62 78 Q90 106 134 162 Q98 92 68 62 Q36 34 8 0Z" fill="#2d5a40"/>
       </svg>
       <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Great Vibes',cursive;font-size:280px;color:#2d5a40;opacity:.04;pointer-events:none;line-height:1;white-space:nowrap;">&amp;</div>
-      <!-- Telugu wedding motif: mango-leaf toranam strung across the top -->
       <svg style="position:absolute;top:0px;left:50%;transform:translateX(-50%);opacity:.5;" width="280" height="70" viewBox="0 0 280 70" fill="none">
         <path d="M4 6 Q140 26 276 6" stroke="#8a6a3a" stroke-width="2" fill="none"/>
         <g fill="#5d8a4a">
@@ -420,7 +383,6 @@ nav.topnav{
     </div>
   </section>
 
-  <!-- ── SCRATCH / REVEAL ── -->
   <div class="reveal-section" id="reveal">
     <p class="rev-eyebrow reveal">Reveal the Wedding Date</p>
     <h2 class="rev-title reveal">Scratch to Reveal</h2>
@@ -445,7 +407,6 @@ nav.topnav{
     </div>
   </div>
 
-  <!-- ── SCHEDULE (shown after scratch) ── -->
   <div id="sched-section">
     <div class="schedule-outer">
       <p class="sched-eyebrow reveal">Event Schedule</p>
@@ -465,32 +426,24 @@ nav.topnav{
     </div>
   </div>
 
-  <!-- ── AWAITING / FAMILIES ── -->
   <div class="awaiting-section">
     <div class="await-bg-mono">శ్రీ</div>
 
-    <!-- Telugu wedding motif: Kalasham (sacred pot with coconut and mango leaves) -->
     <svg style="margin-bottom:24px;" width="86" height="100" viewBox="0 0 86 100" fill="none" class="reveal-scale">
-      <!-- coconut -->
       <circle cx="43" cy="20" r="15" fill="#8a6a3a"/>
       <circle cx="43" cy="20" r="15" fill="none" stroke="#5d4a28" stroke-width="1"/>
       <path d="M36 14 Q43 10 50 14" stroke="#5d4a28" stroke-width="1" fill="none"/>
-      <!-- mango leaves around neck -->
       <g fill="#5d8a4a">
         <path d="M16 38 Q8 30 12 20 Q20 28 16 38Z"/>
         <path d="M70 38 Q78 30 74 20 Q66 28 70 38Z"/>
         <path d="M28 32 Q22 22 28 12 Q34 22 28 32Z"/>
         <path d="M58 32 Q64 22 58 12 Q52 22 58 32Z"/>
       </g>
-      <!-- pot neck -->
       <path d="M30 38 L30 48 Q30 52 35 52 L51 52 Q56 52 56 48 L56 38 Z" fill="#c79a4b"/>
-      <!-- pot body -->
       <path d="M22 52 Q20 78 30 92 Q43 100 56 92 Q66 78 64 52 Z" fill="#d4a853"/>
       <path d="M22 52 Q20 78 30 92 Q43 100 56 92 Q66 78 64 52 Z" fill="none" stroke="#9c7530" stroke-width="1"/>
-      <!-- decorative bands -->
       <path d="M24 64 Q43 70 62 64" stroke="#9c7530" stroke-width="1.2" fill="none" opacity=".6"/>
       <path d="M25 78 Q43 84 61 78" stroke="#9c7530" stroke-width="1.2" fill="none" opacity=".6"/>
-      <!-- small kumkum dot -->
       <circle cx="43" cy="68" r="3" fill="#b97b8c"/>
     </svg>
 
@@ -528,7 +481,6 @@ nav.topnav{
     </div>
   </div>
 
-  <!-- ── VENUE ── -->
   <div class="venue-section" id="venue">
     <p class="venue-eyebrow reveal">Where We Celebrate</p>
     <h2 class="venue-title reveal">Venue</h2>
@@ -546,7 +498,6 @@ nav.topnav{
     </div>
   </div>
 
-  <!-- ── FOOTER ── -->
   <footer class="footer">
     <div class="footer-mono">Srinivas &amp; Sangha Mitra</div>
     <p class="footer-date">27 · August · 2026</p>
@@ -572,14 +523,11 @@ function spawnPetals(){
 function openEnvelope(){
   spawnPetals();
   document.getElementById('env-screen').classList.add('hide');
-  // start background music (only if a music.mp3 file has been added)
   const music=document.getElementById('bgMusic');
   music.volume=0.45;
   music.play().then(()=>{
     document.getElementById('musicToggle').style.display='flex';
-  }).catch(()=>{
-    // no music file present or autoplay blocked — fail silently, site still works
-  });
+  }).catch(()=>{});
   setTimeout(()=>{
     document.getElementById('env-screen').style.display='none';
     document.getElementById('main-site').classList.add('visible');
@@ -611,7 +559,6 @@ function initScratch(){
   canvas.width=wrap.offsetWidth;
   canvas.height=wrap.offsetHeight;
 
-  // Gold scratch-off surface
   const grad=ctx.createLinearGradient(0,0,canvas.width,canvas.height);
   grad.addColorStop(0,'#e0ad55');
   grad.addColorStop(.5,'#d4a040');
@@ -619,7 +566,6 @@ function initScratch(){
   ctx.fillStyle=grad;
   ctx.beginPath();ctx.roundRect(0,0,canvas.width,canvas.height,14);ctx.fill();
 
-  // subtle foil texture lines
   ctx.strokeStyle='rgba(255,255,255,.18)';
   for(let i=0;i<canvas.width;i+=14){ctx.beginPath();ctx.moveTo(i,0);ctx.lineTo(i,canvas.height);ctx.stroke();}
   ctx.strokeStyle='rgba(120,80,10,.12)';
@@ -633,7 +579,6 @@ function initScratch(){
   let down=false,scratched=0;
   const total=canvas.width*canvas.height;
 
-  // ── cracker / spark particles ──
   function fireSparks(x,y){
     const rect=canvas.getBoundingClientRect();
     const sparkColors=['#ffd84d','#ffb800','#ff8c00','#fff3c0','#ffe066'];
@@ -708,7 +653,6 @@ function startCountdown(){
   tick();setInterval(tick,1000);
 }
 
-/* Scroll reveal observer */
 let revealObserver;
 function initScrollReveal(){
   const els=document.querySelectorAll('.reveal, .reveal-l, .reveal-r, .reveal-scale');
